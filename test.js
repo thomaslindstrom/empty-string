@@ -26,6 +26,10 @@
             assert.equal(EMPTY_STRING === 1, false);
         });
 
+        it('should not be the number 0', function () {
+            assert.equal(EMPTY_STRING === 0, false);
+        });
+
         it('should not be the number 10000 either', function () {
             assert.equal(EMPTY_STRING === 10000, false);
         });
