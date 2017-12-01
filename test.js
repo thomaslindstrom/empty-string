@@ -10,6 +10,10 @@
             assert.equal(EMPTY_STRING, '');
         });
 
+        it('should be a really empty string', function () {
+            assert.equal(EMPTY_STRING.length, 0);
+        });
+
         it('should not be an empty object', function () {
             assert.equal(EMPTY_STRING === {}, false);
         });
