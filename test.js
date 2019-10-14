@@ -1,10 +1,11 @@
 // ---------------------------------------------------------------------------
-//  assert.js
+//  assert.js (flow-types 今含まれています)
 // ---------------------------------------------------------------------------
 
-    var EMPTY_STRING = require('./index.js');
-    var assert = require('assert');
+    const assert = require('assert'),
+          EMPTY_STRING = require('./index.js');
 
+    /* 正気チェック */
     describe('empty-string', function() {
         it('should be an empty string', function () {
             assert.equal(EMPTY_STRING, '');
@@ -46,12 +47,24 @@
             assert.equal(EMPTY_STRING === undefined, false);
         });
 
+        it('should not be null', function () {
+            assert.equal(EMPTY_STRING === null, false);
+        });
+
         it('should not be false', function () {
             assert.equal(EMPTY_STRING === false, false);
         });
 
         it('should not be true', function () {
             assert.equal(EMPTY_STRING === true, false);
+        });
+
+        it('should be a string', function () {
+            assert.equal(typeof EMPTY_STRING === "string", true);
+        });
+
+        it('should not be a symbol', function () {
+            assert.equal(typeof EMPTY_STRING === "symbol", false);
         });
 
         it('should be itself', function () {
