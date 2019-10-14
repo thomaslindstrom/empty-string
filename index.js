@@ -1,3 +1,1 @@
-Object.defineProperty(module, "exports", {
-    get() { return ""; }
-});
+module.exports = "";
