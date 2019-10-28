@@ -7,6 +7,6 @@ yarn add empty-string
 ```
 
 ```javascript
-const EMPTY_STRING = require('empty-string');
-console.log(EMPTY_STRING); // ''
+import EMPTY_STRING from "empty-string";
+console.log(EMPTY_STRING); // ""
 ```
