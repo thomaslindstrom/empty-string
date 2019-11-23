@@ -2,7 +2,7 @@
   "name": "empty-string",
   "version": "1.1.2",
   "description": "a well-tested empty string module in case you forget how to make one",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "test": "mocha"
   },
